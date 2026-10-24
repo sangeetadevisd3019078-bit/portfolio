@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("gsap-ready");
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A creative developer & competitive programmer portfolio.">
+  <title>AASHISH RANJAN — Developer & CP Enthusiast</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+      <div class="loader-content">
+          <p class="loader-label">PORTFOLIO — 2026</p>
+          <h1>AASHISH<br>RANJAN<span>.</span></h1>
+
+          <div class="loader-track">
+              <div class="loader-progress"></div>
+          </div>
+
+          <p class="loader-caption">CREATIVE DEVELOPER / CP ENTHUSIAST</p>
+      </div>
+  </div>
+
+  <!-- Interactive Dual Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Fixed Palette Accent Picker -->
+  <div class="theme-switcher" aria-label="Theme Color Picker">
+    <span class="switcher-title">ACCENT</span>
+    <button class="color-btn active" data-accent="#00f0ff" style="background:#00f0ff;" title="Electric Cyan"></button>
+    <button class="color-btn" data-accent="#c7ff35" style="background:#c7ff35;" title="Cyber Lime"></button>
+    <button class="color-btn" data-accent="#b066fe" style="background:#b066fe;" title="Neon Purple"></button>
+    <button class="color-btn" data-accent="#ff6b35" style="background:#ff6b35;" title="Sunset Orange"></button>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Go to top">Aashish Ranjan<span>®</span></a>
+    <div class="nav-links">
+      <a class="nav-item" href="#about">ABOUT</a>
+      <a class="nav-item" href="#cp-stats">CP STATS</a>
+      <a class="nav-item" href="#work">PROJECTS</a>
+      <a class="menu-link" href="#contact">LET'S TALK <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero section-pad">
+      <p class="eyebrow reveal">COMPETITIVE PROGRAMMER & DEVELOPER</p>
+      <h1 class="hero-title">
+        <span class="title-line"><span>BUILDING</span></span>
+        <span class="title-line title-offset"><span>THINGS</span></span>
+        <span class="title-line"><span>FOR THE <em>WEB</em></span></span>
+      </h1>
+      <h1 class="hero-title">
+        <span class="title-line title-offset"><span>AND DIGITAL <em>EXPERIENCES.</em></span></span>
+      </h1>
+      <div class="hero-bottom reveal">
+        <p>Based in India<br>Learning by building.</p>
+        <p class="hero-note">SCROLL TO EXPLORE <span class="arrow-down">↓</span></p>
+      </div>
+      <div class="hero-orb" aria-hidden="true"></div>
+    </section>
+
+    <!-- Intro Section with Profile Image -->
+    <section class="intro section-pad" id="intro">
+      <div class="intro-left">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <div class="profile-image-container reveal">
+          <img src="first.jpeg" alt="Aashish Ranjan" class="profile-img">
+        </div>
+      </div>
+      <div class="intro-copy reveal">
+        I'm a CSE student who enjoys solving complex algorithmic problems, learning modern technology stacks, and turning concepts into highly responsive digital experiences.
+        <span class="muted">Currently exploring web development alongside competitive programming.</span>
+      </div>
+    </section>
+
+    <!-- CP Highlights Dashboard -->
+    <section class="cp-stats section-pad" id="cp-stats">
+      <div class="section-heading">
+        <p class="eyebrow">( CP HIGHLIGHTS )</p>
+        <p class="eyebrow">PROBLEM SOLVING ↘</p>
+      </div>
+      
+      <div class="cp-grid">
+        <div class="cp-card reveal">
+          <div class="cp-card-header">
+            <span class="cp-platform">CODEFORCES</span>
+            <span class="cp-tag">SPECIALIST / PUPIL</span>
+          </div>
+          <div class="cp-card-body">
+            <h3 class="stat-number" data-target="1450">0</h3>
+            <p class="stat-label">Max Rating Achieved</p>
+          </div>
+          <div class="cp-card-footer">
+            <span>800+ Problems Solved</span>
+            <a href="https://codeforces.com/profile/AAshish_ranjan123" target="_blank" rel="noreferrer">PROFILE ↗</a>
+          </div>
+        </div>
+
+        <div class="cp-card reveal">
+          <div class="cp-card-header">
+            <span class="cp-platform">LEETCODE</span>
+            <span class="cp-tag">KNIGHT / TOP 5%</span>
+          </div>
+          <div class="cp-card-body">
+            <h3 class="stat-number" data-target="650">0</h3>
+            <p class="stat-label">Problems Solved</p>
+          </div>
+          <div class="cp-card-footer">
+            <span>Contest Max: 1850+</span>
+            <a href="https://leetcode.com/" target="_blank" rel="noreferrer">PROFILE ↗</a>
+          </div>
+        </div>
+
+        <div class="cp-card reveal">
+          <div class="cp-card-header">
+            <span class="cp-platform">CODECHEF</span>
+            <span class="cp-tag">3★ CODER</span>
+          </div>
+          <div class="cp-card-body">
+            <h3 class="stat-number" data-target="1680">0</h3>
+            <p class="stat-label">Max Contest Rating</p>
+          </div>
+          <div class="cp-card-footer">
+            <span>Division 2 Contests</span>
+            <a href="https://www.codechef.com/" target="_blank" rel="noreferrer">PROFILE ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Matrix -->
+    <section class="tech-matrix section-pad">
+      <div class="section-heading">
+        <p class="eyebrow">( TOOLKIT )</p>
+        <p class="eyebrow">STACK & SKILLS ↘</p>
+      </div>
+
+      <div class="matrix-tabs">
+        <button class="matrix-tab active" data-tab="all">ALL SKILLS</button>
+        <button class="matrix-tab" data-tab="cp">CP & CORE</button>
+        <button class="matrix-tab" data-tab="web">WEB DEV</button>
+        <button class="matrix-tab" data-tab="tools">TOOLS</button>
+      </div>
+
+      <div class="matrix-grid">
+        <div class="matrix-item" data-cat="cp">
+          <span class="matrix-name">C++ 17/20</span>
+          <span class="matrix-level">ADVANCED</span>
+        </div>
+        <div class="matrix-item" data-cat="cp">
+          <span class="matrix-name">Data Structures & Algorithms</span>
+          <span class="matrix-level">PROFICIENT</span>
+        </div>
+        <div class="matrix-item" data-cat="web">
+          <span class="matrix-name">JavaScript (ES6+)</span>
+          <span class="matrix-level">ADVANCED</span>
+        </div>
+        <div class="matrix-item" data-cat="web">
+          <span class="matrix-name">HTML5 / CSS3 / SASS</span>
+          <span class="matrix-level">EXPERT</span>
+        </div>
+        <div class="matrix-item" data-cat="web">
+          <span class="matrix-name">React.js & Next.js</span>
+          <span class="matrix-level">INTERMEDIATE</span>
+        </div>
+        <div class="matrix-item" data-cat="web">
+          <span class="matrix-name">GSAP & WebGL Animations</span>
+          <span class="matrix-level">INTERMEDIATE</span>
+        </div>
+        <div class="matrix-item" data-cat="cp">
+          <span class="matrix-name">Python 3</span>
+          <span class="matrix-level">INTERMEDIATE</span>
+        </div>
+        <div class="matrix-item" data-cat="tools">
+          <span class="matrix-name">Git & GitHub</span>
+          <span class="matrix-level">WORKFLOW</span>
+        </div>
+        <div class="matrix-item" data-cat="tools">
+          <span class="matrix-name">Linux / Bash CLI</span>
+          <span class="matrix-level">WORKFLOW</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filterable Selected Projects -->
+    <section class="work section-pad" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED PROJECTS</p>
+        <p class="eyebrow">2026 ↘</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">ALL (04)</button>
+        <button class="filter-btn" data-filter="cp">CP & ALGO</button>
+        <button class="filter-btn" data-filter="web">WEB APPS</button>
+        <button class="filter-btn" data-filter="content">CONTENT</button>
+      </div>
+
+      <div class="projects-list">
+        <article class="project" data-category="cp" data-title="CP TRACKER" data-desc="Real-time competitive programming analytics dashboard leveraging Codeforces API to track problem-solving streaks and rating progression graphs." data-tech="API / JAVASCRIPT / GSAP" data-link="https://codeforces.com/profile/AAshish_ranjan123">
+          <div class="project-main">
+            <h2>CP TRACKER</h2>
+            <span class="project-year">01</span>
+          </div>
+          <div class="project-meta">
+            <span>API / JAVASCRIPT</span>
+            <span class="view-btn">EXPLORE ↗</span>
+          </div>
+          <div class="project-preview preview-one" aria-hidden="true">
+            <span>CP<br>TRACKER</span>
+          </div>
+        </article>
+
+        <article class="project" data-category="content" data-title="YOUTUBE CHANNEL" data-desc="Educational programming content sharing editorial walkthroughs for contest problems, algorithm explanations, and CS student logs." data-tech="VIDEO / CONTENT / DESIGN" data-link="https://www.youtube.com/@aashish-0320">
+          <div class="project-main">
+            <h2>YOUTUBE CHANNEL</h2>
+            <span class="project-year">02</span>
+          </div>
+          <div class="project-meta">
+            <span>VIDEO / CONTENT</span>
+            <span class="view-btn">EXPLORE ↗</span>
+          </div>
+          <div class="project-preview preview-two" aria-hidden="true">
+            <span>KEEP<br>GOING.</span>
+          </div>
+        </article>
+
+        <article class="project" data-category="web" data-title="PROBLEM LOG" data-desc="Custom web interface designed for cataloging algorithmic problem solutions, categorize tagging, and time complexity analyses." data-tech="HTML / CSS / JS" data-link="https://codeforces.com/problemset">
+          <div class="project-main">
+            <h2>PROBLEM LOG</h2>
+            <span class="project-year">03</span>
+          </div>
+          <div class="project-meta">
+            <span>HTML / CSS / JS</span>
+            <span class="view-btn">EXPLORE ↗</span>
+          </div>
+          <div class="project-preview preview-three" aria-hidden="true">
+            <span>KEEP<br>GOING.</span>
+          </div>
+        </article>
+
+        <article class="project" data-category="web" data-title="THIS PORTFOLIO" data-desc="Editorial dark-themed developer portfolio built with semantic HTML5, modern CSS custom properties, smooth scroll, and GSAP sequence animations." data-tech="FRONTEND / ANIMATION" data-link="https://github.com/sangeetadevisd3019078-bit">
+          <div class="project-main">
+            <h2>THIS PORTFOLIO</h2>
+            <span class="project-year">04</span>
+          </div>
+          <div class="project-meta">
+            <span>FRONTEND / ANIMATION</span>
+            <span class="view-btn">EXPLORE ↗</span>
+          </div>
+          <div class="project-preview preview-four" aria-hidden="true">
+            <span>MADE<br>BY ME.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-pad" id="about">
+      <div class="about-label">
+        <p class="eyebrow">( ABOUT ME )</p>
+        <div class="about-mark" aria-hidden="true">A . R</div>
+      </div>
+      <div class="about-content reveal">
+        <p class="about-lead">Curious by default.<br><span>Consistent by choice.</span></p>
+        <p class="about-description">
+          I like the process of breaking a difficult problem into smaller pieces. Whether it's an intense contest problem or a slick web interface, I'm always learning, experimenting, and improving one step at a time.
+        </p>
+        <div class="about-actions">
+          <a class="pill-link" href="https://github.com/sangeetadevisd3019078-bit" target="_blank" rel="noreferrer">GITHUB PROFILE <span>↗</span></a>
+          <a class="pill-link" href="https://www.linkedin.com/in/aashish-ranjan-146823384/" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-pad" id="contact">
+      <p class="eyebrow">HAVE AN IDEA OR OPPORTUNITY?</p>
+      <h2>LET'S MAKE<br><span>SOMETHING.</span></h2>
+
+      <div class="email-badge-wrapper">
+        <button class="email-copy-btn" id="copyEmailBtn" title="Click to copy email">
+          <span id="emailText">sangeetadevi.sd3019078@gmail.com</span>
+          <span class="copy-icon">📋 COPY</span>
+        </button>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="formName" required placeholder="YOUR NAME">
+        </div>
+        <div class="form-group">
+          <input type="email" id="formEmail" required placeholder="YOUR EMAIL">
+        </div>
+        <div class="form-group">
+          <textarea id="formMessage" rows="3" required placeholder="YOUR MESSAGE OR INQUIRY"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">SEND MESSAGE ↗</button>
+      </form>
+
+      <footer>
+        <span>© 2026 AASHISH RANJAN</span>
+        <div class="socials">
+          <a href="https://github.com/sangeetadevisd3019078-bit" target="_blank" rel="noreferrer">GITHUB ↗</a>
+          <a href="https://www.linkedin.com/in/aashish-ranjan-146823384/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+          <a href="#top">BACK TO TOP ↑</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Project Detail Interactive Modal -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <p class="eyebrow" id="modalCategory">CATEGORY</p>
+      <h2 id="modalTitle">Project Title</h2>
+      <p class="modal-tech" id="modalTech">TECH STACK</p>
+      <p class="modal-description" id="modalDesc">Project description goes here...</p>
+      <a class="pill-link modal-link" id="modalLink" href="#" target="_blank" rel="noreferrer">LAUNCH PROJECT <span>↗</span></a>
+    </div>
+  </div>
+
+</body>
+</html>
